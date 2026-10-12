@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VINES: Towards Resilient and Converged NextG Manufacturing Systems | NSF-SRC Track 1</title>
+  <meta name="description" content="NSF Award #2549126 & #2549127: Towards Resilient and Converged NextG Manufacturing Systems. Collaborative research by UConn, University of Iowa, and Mid Sweden University.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/vines-logo.svg">
+</head>
+<body>
+
+  <!-- Top Metadata & Branch Switcher Bar -->
+  <aside class="top-notice-bar" aria-label="Project Status & Branch Notification">
+    <div class="container top-notice-inner">
+      <div class="notice-meta">
+        <span class="notice-badge">NSF Award #2549126 / #2549127</span>
+        <span>CISE Core &amp; Global Venture Fund • Verticals-enabling Intelligent Network Systems (VINES)</span>
+      </div>
+      <div>
+        <a href="https://github.com" target="_blank" class="branch-switch-pill" title="View UConn Branded Branch">
+          <span>🌿 Branch: main (Collaborative)</span>
+          <span>•</span>
+          <span style="text-decoration: underline;">Switch to 'uconn' branch</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="site-brand" aria-label="VINES Project Homepage">
+        <img src="assets/images/vines-logo.svg" alt="VINES Logo" class="site-logo">
+        <div class="brand-text-block">
+          <span class="brand-title">VINES</span>
+          <span class="brand-subtitle">NSF-SRC Track 1</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#overview">Overview</a></li>
+          <li class="nav-item"><a href="#architecture">Architecture</a></li>
+          <li class="nav-item"><a href="#thrusts">Research Thrusts</a></li>
+          <li class="nav-item"><a href="#quad-chart">Quad Chart</a></li>
+          <li class="nav-item"><a href="#software">Software &amp; Tools</a></li>
+          <li class="nav-item"><a href="#publications">Publications</a></li>
+          <li class="nav-item"><a href="#team">Team</a></li>
+          <li class="nav-item"><a href="#impacts">Impacts</a></li>
+          <li class="nav-item"><a href="#openings" class="nav-cta">Join Our Team</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="home">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="hero-pill-dot"></span>
+            <span>NSF Verticals-enabling Intelligent Network Systems (VINES) • Track 1</span>
+          </div>
+
+          <h1 class="hero-title">
+            Towards <span class="gradient-text">Resilient &amp; Converged</span> NextG Manufacturing Systems
+          </h1>
+
+          <p class="hero-description">
+            Advancing the cyber-physical infrastructure for Next-Generation Manufacturing Systems (NGMS) by coupling 
+            predictive intelligence at the wireless edge with deterministic, fault-tolerant Time-Sensitive Networking (TSN) 
+            in the core to deliver verifiable end-to-end performance guarantees.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#overview" class="btn btn-primary">Project Overview</a>
+            <a href="#architecture" class="btn btn-secondary">System Architecture</a>
+            <a href="#quad-chart" class="btn btn-outline">View Quad Chart (PDF)</a>
+            <a href="https://github.com/ChuanyuXue/tsnkit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              TSNKit Evaluation Suite
+            </a>
+          </div>
+
+          <!-- Grant Quick Facts Card -->
+          <div class="grant-metadata-card">
+            <div class="meta-item">
+              <span class="meta-label">Award Identifier</span>
+              <span class="meta-value">NSF #2549126 (Lead)</span>
+              <span class="meta-sub">Collaborative #2549127</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Program &amp; Track</span>
+              <span class="meta-value">NSF VINES Track 1</span>
+              <span class="meta-sub">NSF-SRC International Partnership</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Lead Institution</span>
+              <span class="meta-value">University of Connecticut</span>
+              <span class="meta-sub">School of Computing</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Collaborators</span>
+              <span class="meta-value">U of Iowa &amp; MIUN (Sweden)</span>
+              <span class="meta-sub">Transatlantic Consortium</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Award Duration</span>
+              <span class="meta-value">2026 – 2029</span>
+              <span class="meta-sub">Active 3-Year Standard Grant</span>
+            </div>
+          </div>
+
+          <!-- Institutional Logos Strip -->
+          <div class="institutions-bar">
+            <span class="inst-heading">Consortium Partners:</span>
+            <div class="inst-logos">
+              <div class="inst-badge">
+                <img src="assets/images/uconn-logo.svg" alt="UConn Wordmark">
+                <span class="lead-tag">Lead</span>
+              </div>
+              <div class="inst-badge">
+                <img src="assets/images/uiowa-logo.svg" alt="University of Iowa Logo">
+                <span>Collaborative</span>
+              </div>
+              <div class="inst-badge">
+                <img src="assets/images/miun-logo.svg" alt="Mid Sweden University Logo">
+                <span>International Partner</span>
+              </div>
+              <div class="inst-badge">
+                <img src="assets/images/nsf-logo.svg" alt="National Science Foundation Logo">
+                <span>Funding Agency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview & Quad Chart Breakdown -->
+    <section id="overview" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Motivation &amp; Research Foundations</span>
+          <h2 class="section-title">The NextG Smart Manufacturing Challenge</h2>
+          <p class="section-subtitle">
+            Next-generation smart factories demand unprecedented agility, but legacy industrial networking architectures 
+            were never designed for dynamic, failure-prone cyber-physical operations.
+          </p>
+        </div>
+
+        <!-- Problem vs Solution Quad Overview -->
+        <div class="quad-overview-grid">
+          <div class="problem-card">
+            <span class="card-badge">Problem to Solve</span>
+            <h3 class="card-heading">Fragile &amp; Reactive Connectivity</h3>
+            <p class="card-p">
+              A central challenge in <strong>Next-Generation Manufacturing Systems (NGMS)</strong> is ensuring resilient 
+              and deterministic connectivity across wired and wireless domains in dynamic, failure-prone shop floors.
+            </p>
+            <p class="card-p">
+              Existing industrial solutions are largely <strong>reactive and siloed</strong>, leaving manufacturing operations 
+              vulnerable to wireless RF interference, human and robotic line-of-sight blockage, hardware component failures, 
+              and unpredictable downtime that costs modern manufacturers millions of dollars.
+            </p>
+          </div>
+
+          <div class="solution-card">
+            <span class="card-badge">Project Contributions</span>
+            <h3 class="card-heading">Predictive Coordination &amp; Convergence</h3>
+            <p class="card-p">
+              Our project advances the <strong>cyber infrastructure design for NGMS</strong> by enabling predictive 
+              coordination across converged wireless and wired networks, establishing a resilient communications foundation.
+            </p>
+            <p class="card-p">
+              By replacing reactive repair with <strong>short-horizon ML prediction</strong>, <strong>ISAC-based physical sensing</strong>, 
+              and <strong>zero-touch TSN failover</strong>, we provide contract-based end-to-end integration with bounded latency and jitter.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vectors Breakdown (Vector A, Vector B, Convergence) -->
+        <div class="vectors-container">
+          <div class="vector-box">
+            <div class="vector-header">
+              <h4 class="vector-title">Vector A</h4>
+              <span class="vector-tag">Resilience &amp; Convergence</span>
+            </div>
+            <ul class="vector-list">
+              <li><strong>Resilience:</strong> Maintain continuous mission-critical operation despite severe radio interference, link degradation, or physical hardware faults.</li>
+              <li><strong>Convergence:</strong> Coordinate seamlessly across heterogeneous wired (TSN) and wireless (5G/6G) domains with strict bounded latency and predictable performance.</li>
+            </ul>
+          </div>
+
+          <div class="vector-box">
+            <div class="vector-header">
+              <h4 class="vector-title">Vector B</h4>
+              <span class="vector-tag">AI-Native Design &amp; ISAC</span>
+            </div>
+            <ul class="vector-list">
+              <li><strong>AI-Native Design:</strong> Machine learning-driven, short-horizon prediction at the network edge to support timely, reliable proactive scheduling adaptation.</li>
+              <li><strong>ISAC Integration:</strong> Incorporate Integrated Sensing and Communication into network awareness to detect physical obstacles before wireless dropouts occur.</li>
+            </ul>
+          </div>
+
+          <div class="vector-box vector-convergence">
+            <div class="vector-header">
+              <h4 class="vector-title">Convergence</h4>
+              <span class="vector-tag">Cross-Domain Decision Support</span>
+            </div>
+            <ul class="vector-list">
+              <li>The enabling technologies supply information and decision support to realize NGMS capabilities through short-horizon prediction.</li>
+              <li>Proactive edge/core adaptation and contract-based end-to-end integration establish verifiable SLA guarantees for industrial control loops.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Architecture & 3 Substrates -->
+    <section id="architecture" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">System Architecture</span>
+          <h2 class="section-title">The Three Interconnected Substrates</h2>
+          <p class="section-subtitle">
+            A vertically integrated architecture bridging high-level manufacturing intelligence, 
+            converged cyber networking, and physical industrial hardware.
+          </p>
+        </div>
+
+        <div class="architecture-viewer">
+          <!-- Architecture SVG Graphic -->
+          <div class="diagram-wrapper">
+            <img src="assets/images/vines-diagram.svg" alt="VINES 3-Substrate System Architecture" style="max-width: 960px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-radius: 12px;">
+          </div>
+
+          <!-- Interactive Substrate Exploration Tabs -->
+          <div class="substrate-tabs" role="tablist">
+            <button class="tab-btn active" data-substrate="application" role="tab">1. Application Substrate</button>
+            <button class="tab-btn" data-substrate="cyber" role="tab">2. Cyber Substrate</button>
+            <button class="tab-btn" data-substrate="physical" role="tab">3. Physical Substrate</button>
+          </div>
+
+          <!-- Panel 1: Application Substrate -->
+          <div id="panel-application" class="substrate-panel active">
+            <div class="substrate-cards-grid">
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">📊</div>
+                <h4 class="sub-detail-title">Monitoring &amp; Control</h4>
+                <p class="sub-detail-text">Closed-loop real-time feedback with sub-millisecond control loops for CNC machines, robotic arms, and high-precision assembly tooling.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">🩺</div>
+                <h4 class="sub-detail-title">Diagnosis &amp; Prognosis</h4>
+                <p class="sub-detail-text">Edge-assisted acoustic, thermal, and vibration anomaly monitoring to predict mechanical failure before catastrophic production stoppage.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">👁️</div>
+                <h4 class="sub-detail-title">Machine Vision</h4>
+                <p class="sub-detail-text">Ultra-high-definition multi-camera defect inspection streams requiring deterministic throughput and low-jitter packet ingestion.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">🤖</div>
+                <h4 class="sub-detail-title">Cobot Path Planning</h4>
+                <p class="sub-detail-text">Dynamic trajectory re-computation for collaborative robots interacting safely alongside human operators in shared factory workspaces.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Cyber Substrate -->
+          <div id="panel-cyber" class="substrate-panel">
+            <div class="substrate-cards-grid">
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">📡</div>
+                <h4 class="sub-detail-title">Predictive Wireless Edge</h4>
+                <p class="sub-detail-text">5G/6G URLLC gNodeB with cycle-aligned scheduling and ML-based channel prediction that anticipates RF fading up to dozens of milliseconds ahead.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">⚡</div>
+                <h4 class="sub-detail-title">Deterministic TSN Core</h4>
+                <p class="sub-detail-text">IEEE 802.1Qbv Time-Aware Shaper (TAS) switches, shadow schedule generation, and zero-touch failover guaranteeing microsecond jitter bounds under link failures.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">🔄</div>
+                <h4 class="sub-detail-title">Cross-Domain Control Layer</h4>
+                <p class="sub-detail-text">Jointly partitions, reserves, and orchestrates wireless resource blocks and TSN time slots to enforce end-to-end contracts and bounded latency.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">🛡️</div>
+                <h4 class="sub-detail-title">Zero-Touch Resilience</h4>
+                <p class="sub-detail-text">Pre-computed shadow schedules and automated re-routing mechanisms that guarantee zero packet loss for safety-critical streams during faults.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: Physical Substrate -->
+          <div id="panel-physical" class="substrate-panel">
+            <div class="substrate-cards-grid">
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">🦾</div>
+                <h4 class="sub-detail-title">Collaborative Robots (Cobots)</h4>
+                <p class="sub-detail-text">Mobile and stationary cobots executing coordinated multi-arm material handling, assembly, welding, and quality validation tasks.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">🏭</div>
+                <h4 class="sub-detail-title">Dynamic Shop Floor</h4>
+                <p class="sub-detail-text">A complex physical terrain populated by moving AMRs, forklifts, human operators, and large reflective metal machinery causing multi-path fading.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">📻</div>
+                <h4 class="sub-detail-title">Dense IIoT Sensor Mesh</h4>
+                <p class="sub-detail-text">Heterogeneous sensor nodes communicating via configured grant 5G and industrial Ethernet to continuously stream environmental telemetry.</p>
+              </div>
+              <div class="sub-detail-card">
+                <div class="sub-detail-icon">⚙️</div>
+                <h4 class="sub-detail-title">Flexible Manufacturing Cells</h4>
+                <p class="sub-detail-text">Reconfigurable high-mix low-volume production stations capable of adapting workflows on demand without physical recabling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Thrusts -->
+    <section id="thrusts" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Technical Pillars</span>
+          <h2 class="section-title">The Three Integrated Research Thrusts</h2>
+          <p class="section-subtitle">
+            Establishing a closed-loop framework that anticipates risks, mitigates disruptions, 
+            safeguards critical data flows, and continuously refines resource allocation.
+          </p>
+        </div>
+
+        <div class="thrusts-grid">
+          <!-- Thrust 1 -->
+          <article class="thrust-card">
+            <div class="thrust-number-col">
+              <div class="thrust-badge-circle">1</div>
+              <div class="thrust-connector-line"></div>
+            </div>
+            <div class="thrust-body">
+              <span class="thrust-tag">Wireless Edge Thrust</span>
+              <h3 class="thrust-title">ML-Driven Perception, ISAC &amp; Cycle-Aligned Edge Scheduling</h3>
+              <p class="thrust-desc">
+                Focuses on the wireless edge by developing machine learning-driven prediction mechanisms, Integrated Sensing 
+                and Communication (ISAC) techniques, and cycle-aligned scheduling control to dynamically adapt wireless 
+                resources based on real-time channel conditions, interference patterns, and environmental changes.
+              </p>
+              <div class="thrust-points-grid">
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">Short-Horizon Channel Prediction</h4>
+                  <p class="thrust-point-desc">Edge AI models that predict localized RF channel fading and interference 5–50 ms ahead to preemptively trigger grant adaptation.</p>
+                </div>
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">ISAC-Based Obstacle Awareness</h4>
+                  <p class="thrust-point-desc">Leveraging dual-functional radar-communications waveforms to sense moving cobots, AMRs, and personnel before line-of-sight blockage occurs.</p>
+                </div>
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">Cycle-Aligned RAN Scheduling</h4>
+                  <p class="thrust-point-desc">Aligning 5G New Radio (NR) sub-slots and Bandwidth Parts (BWP) with factory automation PLC cycles to eliminate buffering jitter.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Thrust 2 -->
+          <article class="thrust-card">
+            <div class="thrust-number-col">
+              <div class="thrust-badge-circle">2</div>
+              <div class="thrust-connector-line"></div>
+            </div>
+            <div class="thrust-body">
+              <span class="thrust-tag">Wired Core Thrust</span>
+              <h3 class="thrust-title">Deterministic TSN Core &amp; Zero-Touch Fault Failover</h3>
+              <p class="thrust-desc">
+                Strengthens the Time-Sensitive Networking (TSN)-based wired core by introducing deterministic end-device 
+                transmission support, predictive fault detection, shadow schedule generation, and zero-touch failover mechanisms 
+                to ensure bounded latency and near-zero jitter under unexpected network faults.
+              </p>
+              <div class="thrust-points-grid">
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">Commodity NIC Determinism</h4>
+                  <p class="thrust-point-desc">Hardware-software co-designed transmission mechanisms (e.g., KeepON) that enable standard commercial NICs to achieve microsecond-precise TSN timing.</p>
+                </div>
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">Predictive Fault Detection</h4>
+                  <p class="thrust-point-desc">Early detection of cable degradation, buffer overflows, and switch port anomalies through real-time traffic telemetry and TSNKit analytics.</p>
+                </div>
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">Shadow Schedules &amp; Zero-Touch Failover</h4>
+                  <p class="thrust-point-desc">Pre-compiled redundant Gate Control Lists (GCLs) ready to instantly swap transmission paths upon fault detection with zero packet drops.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Thrust 3 -->
+          <article class="thrust-card">
+            <div class="thrust-number-col">
+              <div class="thrust-badge-circle">3</div>
+            </div>
+            <div class="thrust-body">
+              <span class="thrust-tag">Cross-Domain Control Thrust</span>
+              <h3 class="thrust-title">Cross-Domain Orchestration &amp; Verifiable End-to-End Guarantees</h3>
+              <p class="thrust-desc">
+                Addresses cross-domain resource management by jointly partitioning, reserving, and scheduling wireless and wired 
+                resources to support heterogeneous industrial applications with diverse requirements in timing, throughput, and computation.
+              </p>
+              <div class="thrust-points-grid">
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">Joint Resource Partitioning</h4>
+                  <p class="thrust-point-desc">Unified mathematical optimization models that dynamically co-allocate 5G radio resource blocks and TSN bandwidth across the shop floor continuum.</p>
+                </div>
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">Contract-Based End-to-End SLAs</h4>
+                  <p class="thrust-point-desc">Formalized performance contracts that translate high-level manufacturing safety and cycle-time requirements into verifiable cyber network bounds.</p>
+                </div>
+                <div class="thrust-point">
+                  <h4 class="thrust-point-title">Closed-Loop Adaptation</h4>
+                  <p class="thrust-point-desc">Tight feedback loops where predictive wireless intelligence triggers preemptive wired adjustments before quality-of-service violations occur.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quad Chart Section (Embedded Poster Viewer) -->
+    <section id="quad-chart" class="quad-chart-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Grant Quad Chart</span>
+          <h2 class="section-title">Official Grant Poster &amp; Executive Summary</h2>
+          <p class="section-subtitle">
+            Explore the official NSF-SRC project quad chart summarizing our problem statement, enabling technologies, 
+            research vectors, consortium leads, and architecture.
+          </p>
+        </div>
+
+        <div class="quad-viewer-card">
+          <div class="quad-toolbar">
+            <div class="quad-info-label">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+              <span>Track1_2549126_UConn.pdf (Official NSF Quad Chart)</span>
+            </div>
+            <div class="quad-actions">
+              <button id="toggleReplicaBtn" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 14px;">Show Accessible HTML Layout</button>
+              <a href="Track1_2549126_UConn.pdf" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 8px 14px;">
+                Open Fullscreen
+              </a>
+              <a href="Track1_2549126_UConn.pdf" download="Track1_2549126_UConn.pdf" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 14px;">
+                Download PDF
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded PDF Container -->
+          <div class="quad-pdf-frame-container">
+            <object data="Track1_2549126_UConn.pdf" type="application/pdf" class="quad-pdf-frame">
+              <div style="color: #ffffff; padding: 40px; text-align: center;">
+                <p style="margin-bottom: 16px; font-size: 1.1rem;">Your browser does not support embedded PDF preview.</p>
+                <a href="Track1_2549126_UConn.pdf" target="_blank" class="btn btn-primary">Click here to open the PDF poster directly</a>
+              </div>
+            </object>
+          </div>
+
+          <!-- Accessible HTML Quad Chart Replica (Hidden by default, toggleable) -->
+          <div id="quadHtmlReplica" class="quad-html-replica" style="display: none;">
+            <div class="replica-header">
+              Track 1: Collaborative Research: VINES: Track 1: NSF-SRC: Towards Resilient and Converged NextG Manufacturing Systems (2549126)
+            </div>
+            <div class="replica-grid">
+              <div class="replica-cell">
+                <h4>Problem to Solve</h4>
+                <p>A central challenge in NextG manufacturing system (NGMS) is ensuring resilient and deterministic connectivity across wired and wireless domains in dynamic, failure-prone environments.</p>
+                <p style="margin-top: 10px;">Existing solutions are largely reactive and siloed, leaving manufacturing systems vulnerable to interference, equipment failures, and unpredictable disruptions.</p>
+                
+                <h4 style="margin-top: 18px;">Vector A</h4>
+                <p>• <strong>Resilience:</strong> maintain operation despite interference or faults</p>
+                <p>• <strong>Convergence:</strong> coordinate across wired/wireless domains with bounded latency and predictable performance</p>
+
+                <h4 style="margin-top: 14px;">Vector B</h4>
+                <p>• <strong>AI-Native Design:</strong> ML-driven, short-horizon prediction at the network edge to support timely and reliable adaptation.</p>
+                <p>• <strong>ISAC:</strong> Incorporate sensing and communication information into network awareness and coordination.</p>
+              </div>
+
+              <div class="replica-cell">
+                <h4>Project Contributions</h4>
+                <p>Advance the cyber infrastructure design for NGMS by enabling predictive coordination across converged wireless and wired networks, establishing a resilient communications foundation.</p>
+
+                <h4 style="margin-top: 18px;">Our Approach</h4>
+                <p>• Enhance wireless edge with ML-driven perception to adapt scheduling via ISAC-based environmental awareness.</p>
+                <p>• Extend the TSN core with hybrid hardware-software mechanisms to preserve determinism under faults.</p>
+                <p>• Establish a cross-domain control layer to unify predictive wireless edge and deterministic core into verifiable end-to-end guarantees.</p>
+
+                <h4 style="margin-top: 18px;">Collaborating Institutions</h4>
+                <p>• <strong>Lead:</strong> University of Connecticut (UConn)</p>
+                <p>• <strong>Collaborative:</strong> University of Iowa</p>
+                <p>• <strong>Collaborative:</strong> Mid Sweden University (MIUN)</p>
+                <p>• <strong>Sponsor:</strong> NSF Verticals-enabling Intelligent Network Systems (VINES)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source Software, Datasets & Testbeds -->
+    <section id="software" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Artifacts &amp; Community Resources</span>
+          <h2 class="section-title">Open Software, Tools &amp; Testbeds</h2>
+          <p class="section-subtitle">
+            In accordance with NSF open-science mandates, our research outputs, software platforms, 
+            simulation tools, and experimental traces are released openly to academia and industry.
+          </p>
+        </div>
+
+        <div class="tools-grid">
+          <!-- Tool 1: TSNKit -->
+          <div class="tool-card">
+            <div>
+              <span class="tool-badge">Open Source Platform</span>
+              <h3 class="tool-title">TSNKit Evaluation Suite</h3>
+              <p class="tool-desc">
+                An open-source, modular evaluation and scheduling platform for IEEE 802.1Qbv Time-Sensitive Networking. 
+                Features schedule generation algorithms, Gate Control List (GCL) verification, and latency analyzers.
+              </p>
+              <div class="tool-tags">
+                <span class="tool-tag">IEEE 802.1Qbv</span>
+                <span class="tool-tag">TSN Schedulers</span>
+                <span class="tool-tag">Python &amp; C++</span>
+                <span class="tool-tag">RTSS'25</span>
+              </div>
+            </div>
+            <a href="https://github.com/ChuanyuXue/tsnkit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+
+          <!-- Tool 2: KeepON -->
+          <div class="tool-card">
+            <div>
+              <span class="tool-badge">Systems &amp; Networking</span>
+              <h3 class="tool-title">KeepON Deterministic NIC Framework</h3>
+              <p class="tool-desc">
+                High-performance end-station design supporting deterministic traffic with microsecond-accuracy on standard 
+                commodity network interface cards (NICs), removing costly proprietary hardware requirements for factories.
+              </p>
+              <div class="tool-tags">
+                <span class="tool-tag">Deterministic I/O</span>
+                <span class="tool-tag">Linux eBPF/XDP</span>
+                <span class="tool-tag">USENIX NSDI'26</span>
+              </div>
+            </div>
+            <a href="https://www.usenix.org/conference/nsdi26" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Read NSDI'26 Paper
+            </a>
+          </div>
+
+          <!-- Tool 3: 5G-TPS -->
+          <div class="tool-card">
+            <div>
+              <span class="tool-badge">Wireless Scheduling</span>
+              <h3 class="tool-title">5G-TPS Scheduling &amp; Adaptation</h3>
+              <p class="tool-desc">
+                Two-Phase Real-Time Scheduling and Adaptation Framework for 5G Radio Access Networks. Enables 
+                contention-free configured grant allocation and real-time adaptation for mission-critical industrial traffic.
+              </p>
+              <div class="tool-tags">
+                <span class="tool-tag">5G URLLC</span>
+                <span class="tool-tag">Radio Access</span>
+                <span class="tool-tag">IEEE TMC'25</span>
+              </div>
+            </div>
+            <a href="https://ieeexplore.ieee.org/document/11129907" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              View IEEE TMC Publication
+            </a>
+          </div>
+        </div>
+
+        <!-- Real-World Testbeds Strip -->
+        <div class="testbeds-strip">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">Experimental Testbed Facilities</h3>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">
+            Our theoretical models are validated across interconnected physical testbeds situated across our consortium institutions:
+          </p>
+          <div class="testbed-grid">
+            <div class="testbed-box">
+              <span class="testbed-inst">UConn CPS Laboratory</span>
+              <h4 class="testbed-name">Industrial 5G / TSN Factory Cell</h4>
+              <p class="testbed-desc">Software-defined 5G gNodeB, IEEE 802.1Qbv TSN switches, multi-axis cobots, and high-speed industrial I/O emulating high-mix manufacturing.</p>
+            </div>
+            <div class="testbed-box">
+              <span class="testbed-inst">University of Iowa</span>
+              <h4 class="testbed-name">Real-Time CPS &amp; Embedded Testbed</h4>
+              <p class="testbed-desc">Heterogeneous multi-core controllers, real-time Linux end-stations, deterministic packet generators, and fault injection benches.</p>
+            </div>
+            <div class="testbed-box">
+              <span class="testbed-inst">Mid Sweden University (MIUN)</span>
+              <h4 class="testbed-name">STC Sensible Things Testbed</h4>
+              <p class="testbed-desc">Advanced wireless sensor and actuator network (WSAN) testbed with software-defined radios, optical fiber links, and industrial IoT test rigs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Scholarly Outputs</span>
+          <h2 class="section-title">Selected Publications &amp; Preprints</h2>
+          <p class="section-subtitle">
+            Recent and foundational research publications from our project team directly informing 
+            the VINES NextG manufacturing framework.
+          </p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="pub-filter-bar">
+          <input type="text" id="pubSearch" class="pub-search-input" placeholder="Search publications by keyword, author...">
+          <div class="pub-tags">
+            <button class="pub-filter-btn active" data-tag="all">All</button>
+            <button class="pub-filter-btn" data-tag="5g">5G / 6G Wireless</button>
+            <button class="pub-filter-btn" data-tag="tsn">TSN Core</button>
+            <button class="pub-filter-btn" data-tag="systems">Systems &amp; NICs</button>
+          </div>
+        </div>
+
+        <div class="pub-list">
+          <!-- Paper 1 -->
+          <article class="pub-item" data-tags="systems tsn">
+            <div class="pub-meta-top">
+              <span class="pub-venue-badge">USENIX NSDI '26</span>
+              <span class="pub-year-badge">2026</span>
+            </div>
+            <h3 class="pub-title">KeepON: Supporting Deterministic Traffic on Standard NICs</h3>
+            <p class="pub-authors">Chuanyu Xue, <strong>Tianyu Zhang</strong>, and <strong>Song Han</strong></p>
+            <p class="pub-booktitle">In Proceedings of the 23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI '26), 2026.</p>
+            <div class="pub-actions">
+              <a href="https://www.usenix.org/conference/nsdi26" target="_blank" rel="noopener noreferrer" class="pub-btn">Paper Info</a>
+              <button class="pub-btn btn-bibtex" data-bibtex-id="nsdi26">BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Paper 2 -->
+          <article class="pub-item" data-tags="5g">
+            <div class="pub-meta-top">
+              <span class="pub-venue-badge">IEEE RTSS '26</span>
+              <span class="pub-year-badge">2026</span>
+            </div>
+            <h3 class="pub-title">BWP-aware Real-Time Scheduling for Heterogeneous UEs in Industrial 5G Systems</h3>
+            <p class="pub-authors"><strong>Tianyu Zhang</strong>, <strong>Song Han</strong>, <strong>Shengli Zhou</strong>, and <strong>Bing Wang</strong></p>
+            <p class="pub-booktitle">In Proceedings of the 47th IEEE Real-Time Systems Symposium (RTSS '26), 2026.</p>
+            <div class="pub-actions">
+              <a href="https://2026.rtss.org/" target="_blank" rel="noopener noreferrer" class="pub-btn">Conference Info</a>
+              <button class="pub-btn btn-bibtex" data-bibtex-id="rtss26">BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Paper 3 -->
+          <article class="pub-item" data-tags="tsn systems">
+            <div class="pub-meta-top">
+              <span class="pub-venue-badge">IEEE RTSS '25</span>
+              <span class="pub-year-badge">2025</span>
+            </div>
+            <h3 class="pub-title">TSNKit: An Open-Source TSN Scheduling Evaluation Tool</h3>
+            <p class="pub-authors">Chuanyu Xue, <strong>Tianyu Zhang</strong>, and <strong>Song Han</strong></p>
+            <p class="pub-booktitle">In Proceedings of the 46th IEEE Real-Time Systems Symposium (RTSS '25 - Brief Presentation), 2025.</p>
+            <div class="pub-actions">
+              <a href="https://github.com/ChuanyuXue/tsnkit" target="_blank" rel="noopener noreferrer" class="pub-btn">Code Repository</a>
+              <button class="pub-btn btn-bibtex" data-bibtex-id="rtss25">BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Paper 4 -->
+          <article class="pub-item" data-tags="5g">
+            <div class="pub-meta-top">
+              <span class="pub-venue-badge">IEEE TMC</span>
+              <span class="pub-year-badge">2025</span>
+            </div>
+            <h3 class="pub-title">5G-TPS: A Two-Phase Real-Time Scheduling and Adaptation Framework for 5G Radio Access Networks</h3>
+            <p class="pub-authors"><strong>Tianyu Zhang</strong>, Chuanyu Xue, and <strong>Song Han</strong></p>
+            <p class="pub-booktitle">IEEE Transactions on Mobile Computing (TMC), 2025. DOI: 10.1109/TMC.2025.11129907</p>
+            <div class="pub-actions">
+              <a href="https://ieeexplore.ieee.org/document/11129907" target="_blank" rel="noopener noreferrer" class="pub-btn">IEEE Xplore</a>
+              <button class="pub-btn btn-bibtex" data-bibtex-id="tmc25">BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Paper 5 -->
+          <article class="pub-item" data-tags="tsn">
+            <div class="pub-meta-top">
+              <span class="pub-venue-badge">ACM CSUR</span>
+              <span class="pub-year-badge">2025</span>
+            </div>
+            <h3 class="pub-title">A Survey and Experimental Study of Real-Time Scheduling Methods for 802.1Qbv TSN Networks</h3>
+            <p class="pub-authors"><strong>Tianyu Zhang</strong>, <strong>Mikael Gidlund</strong>, and <strong>Song Han</strong></p>
+            <p class="pub-booktitle">ACM Computing Surveys (CSUR), 2025. DOI: 10.1145/3736715</p>
+            <div class="pub-actions">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3736715" target="_blank" rel="noopener noreferrer" class="pub-btn">ACM DL</a>
+              <button class="pub-btn btn-bibtex" data-bibtex-id="csur25">BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Paper 6 -->
+          <article class="pub-item" data-tags="tsn">
+            <div class="pub-meta-top">
+              <span class="pub-venue-badge">IEEE RTAS '24</span>
+              <span class="pub-year-badge">2024</span>
+            </div>
+            <h3 class="pub-title">Real-Time Scheduling for 802.1Qbv Time-Sensitive Networking (TSN): A Systematic Review and Experimental Study</h3>
+            <p class="pub-authors"><strong>Tianyu Zhang</strong>, Chuanyu Xue, and <strong>Song Han</strong></p>
+            <p class="pub-booktitle">In Proceedings of the 30th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS '24), CPS-IoT Week, 2024.</p>
+            <div class="pub-actions">
+              <a href="https://2024.rtas.org/" target="_blank" rel="noopener noreferrer" class="pub-btn">RTAS'24</a>
+              <button class="pub-btn btn-bibtex" data-bibtex-id="rtas24">BibTeX</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Team & Consortium -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Investigators &amp; Collaborators</span>
+          <h2 class="section-title">The VINES Research Team</h2>
+          <p class="section-subtitle">
+            An international transatlantic collaboration bringing together leading cyber-physical systems, 
+            wireless communication, and deterministic networking researchers.
+          </p>
+        </div>
+
+        <!-- Institution 1: University of Connecticut -->
+        <div class="team-institution-block">
+          <div class="team-inst-header">
+            <img src="assets/images/uconn-logo.svg" alt="UConn Logo" class="team-inst-logo">
+            <h3 class="team-inst-title">Lead Institution: University of Connecticut</h3>
+          </div>
+          <div class="team-grid">
+            <!-- Song Han -->
+            <div class="person-card">
+              <div class="person-avatar">SH</div>
+              <div class="person-info">
+                <h4 class="person-name">Dr. Song Han</h4>
+                <span class="person-role">Lead Principal Investigator</span>
+                <p class="person-dept">Pratt &amp; Whitney Associate Professor, School of Computing / CSE, UConn</p>
+                <div class="person-links">
+                  <a href="https://cps.cse.uconn.edu/" target="_blank" class="person-link">Lab Website</a>
+                  <a href="mailto:song@engr.uconn.edu" class="person-link">Email</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shengli Zhou -->
+            <div class="person-card">
+              <div class="person-avatar">SZ</div>
+              <div class="person-info">
+                <h4 class="person-name">Dr. Shengli Zhou</h4>
+                <span class="person-role">Co-Principal Investigator</span>
+                <p class="person-dept">Professor, Electrical &amp; Computer Engineering, UConn • IEEE Fellow</p>
+                <div class="person-links">
+                  <a href="mailto:shengli.zhou@uconn.edu" class="person-link">Email</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bing Wang -->
+            <div class="person-card">
+              <div class="person-avatar">BW</div>
+              <div class="person-info">
+                <h4 class="person-name">Dr. Bing Wang</h4>
+                <span class="person-role">Co-Principal Investigator</span>
+                <p class="person-dept">Professor, School of Computing / Computer Science &amp; Engineering, UConn</p>
+                <div class="person-links">
+                  <a href="mailto:bing@uconn.edu" class="person-link">Email</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Institution 2: University of Iowa -->
+        <div class="team-institution-block">
+          <div class="team-inst-header">
+            <img src="assets/images/uiowa-logo.svg" alt="University of Iowa Logo" class="team-inst-logo">
+            <h3 class="team-inst-title">Collaborative Partner: The University of Iowa</h3>
+          </div>
+          <div class="team-grid">
+            <!-- Tianyu Zhang -->
+            <div class="person-card">
+              <div class="person-avatar">TZ</div>
+              <div class="person-info">
+                <h4 class="person-name">Dr. Tianyu Zhang</h4>
+                <span class="person-role">Principal Investigator (Iowa)</span>
+                <p class="person-dept">Assistant Professor, Department of Computer Science, University of Iowa</p>
+                <div class="person-links">
+                  <a href="https://tianyuzhang.org" target="_blank" class="person-link">Website</a>
+                  <a href="mailto:tianyu-zhang@uiowa.edu" class="person-link">Email</a>
+                  <a href="https://scholar.google.com/citations?user=dvUBe30AAAAJ&hl=en" target="_blank" class="person-link">Scholar</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Steve Goddard -->
+            <div class="person-card">
+              <div class="person-avatar">SG</div>
+              <div class="person-info">
+                <h4 class="person-name">Dr. Stephen M. Goddard</h4>
+                <span class="person-role">Co-Principal Investigator (Iowa)</span>
+                <p class="person-dept">Professor, Department of Computer Science, University of Iowa</p>
+                <div class="person-links">
+                  <a href="mailto:steve-goddard@uiowa.edu" class="person-link">Email</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Institution 3: Mid Sweden University (Sweden) -->
+        <div class="team-institution-block">
+          <div class="team-inst-header">
+            <img src="assets/images/miun-logo.svg" alt="Mid Sweden University Logo" class="team-inst-logo">
+            <h3 class="team-inst-title">International Partner: Mid Sweden University (Mittuniversitetet)</h3>
+          </div>
+          <div class="team-grid">
+            <!-- Mikael Gidlund -->
+            <div class="person-card">
+              <div class="person-avatar">MG</div>
+              <div class="person-info">
+                <h4 class="person-name">Prof. Mikael Gidlund</h4>
+                <span class="person-role">Lead International Collaborator</span>
+                <p class="person-dept">Professor of Computer Engineering, Head of CSN Group, STC Research Centre, MIUN</p>
+                <div class="person-links">
+                  <a href="https://www.miun.se" target="_blank" class="person-link">MIUN Profile</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tingting Zhang -->
+            <div class="person-card">
+              <div class="person-avatar">TZ</div>
+              <div class="person-info">
+                <h4 class="person-name">Prof. Tingting Zhang</h4>
+                <span class="person-role">International Collaborator</span>
+                <p class="person-dept">Professor, STC Research Centre &amp; Department of Information Systems, MIUN</p>
+                <div class="person-links">
+                  <a href="https://www.miun.se" target="_blank" class="person-link">MIUN Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Opportunities / Openings -->
+        <div id="openings" class="openings-callout">
+          <div class="openings-content">
+            <h3>We Are Actively Recruiting Ph.D. &amp; Postdoc Researchers!</h3>
+            <p>
+              Motivated Ph.D. students, postdoctoral fellows, and student interns interested in real-time cyber-physical 
+              systems, industrial 5G/6G wireless networks, and TSN scheduling are warmly invited to join our research groups 
+              at the University of Connecticut and the University of Iowa. International transatlantic exchange opportunities 
+              with Sweden are supported.
+            </p>
+          </div>
+          <div>
+            <a href="mailto:song@engr.uconn.edu?subject=VINES%20PhD/Postdoc%20Inquiry" class="btn btn-secondary">
+              Contact UConn (Lead)
+            </a>
+            <a href="mailto:tianyu-zhang@uiowa.edu?subject=VINES%20PhD/Postdoc%20Inquiry" class="btn btn-outline" style="color: #ffffff; border-color: #ffffff; margin-top: 8px;">
+              Contact UIowa
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Broader Impacts & News -->
+    <section id="impacts" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Societal &amp; Educational Reach</span>
+          <h2 class="section-title">Broader Impacts &amp; Workforce Development</h2>
+          <p class="section-subtitle">
+            Catalyzing real-world industrial transformation, training the NextG manufacturing workforce, 
+            and democratizing advanced communication technologies.
+          </p>
+        </div>
+
+        <div class="impacts-grid" style="margin-bottom: 56px;">
+          <div class="impact-card">
+            <div class="impact-icon">🏭</div>
+            <h3 class="impact-title">Democratizing Smart Manufacturing</h3>
+            <p class="impact-desc">
+              Lowers barriers for Small and Medium-sized Manufacturers (SMMs) seeking automation without requiring costly, 
+              proprietary custom infrastructure by utilizing standard commodity hardware and open standards.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon">🌐</div>
+            <h3 class="impact-title">Transatlantic Workforce Training</h3>
+            <p class="impact-desc">
+              Cultivates the next generation of engineers and computer scientists through reciprocal transatlantic student 
+              and scholar research exchanges between the United States and Mid Sweden University.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon">🚀</div>
+            <h3 class="impact-title">Cross-Sector Applications</h3>
+            <p class="impact-desc">
+              Foundational resilience and convergence principles directly extend to other safety-critical domains including 
+              healthcare robotics, lunar surface exploration, intelligent power grids, and autonomous transportation.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon">📦</div>
+            <h3 class="impact-title">Open Science &amp; Curricula</h3>
+            <p class="impact-desc">
+              Disseminating software platforms, trace repositories, course modules, and senior design projects to expand 
+              access to high-quality educational materials nationwide.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project News & Timeline -->
+        <div class="section-header" style="margin-bottom: 32px;">
+          <span class="section-tag">Project Milestones</span>
+          <h3 class="section-title" style="font-size: 1.75rem;">Recent News &amp; Updates</h3>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">Oct 2026</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-text"><strong>Project Kickoff:</strong> Official launch of the NSF-SRC VINES Track 1 collaborative research initiative across UConn, UIowa, and MIUN.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Aug 2026</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-text"><strong>Grant Awarded:</strong> National Science Foundation announces funding for VINES Track 1 (NSF Award #2549126 and #2549127) under the CISE Use-Inspired NextG &amp; Global Venture Fund.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-text"><strong>NSDI &amp; RTSS Acceptance:</strong> Papers on KeepON (standard NIC determinism) accepted to USENIX NSDI '26 and BWP scheduling accepted to IEEE RTSS '26.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-text"><strong>TSNKit Release:</strong> Open-source TSN evaluation suite released at IEEE RTSS '25 and made available on GitHub.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mandatory NSF Disclaimer & Acknowledgment -->
+        <div class="nsf-disclaimer-box">
+          <div class="nsf-disclaimer-header">
+            <img src="assets/images/nsf-logo.svg" alt="NSF Seal" class="nsf-logo-small">
+            <h4 class="nsf-disclaimer-title">Federal Sponsorship &amp; Disclaimer</h4>
+          </div>
+          <p class="nsf-disclaimer-text">
+            <strong>Acknowledgment:</strong> This material is based upon work supported by the National Science Foundation 
+            under Grant No. <strong>2549126</strong> (University of Connecticut) and Grant No. <strong>2549127</strong> (The University of Iowa), 
+            under the CISE Verticals-enabling Intelligent Network Systems (VINES) Track 1 Program, with international support from the 
+            Global Venture Fund and Swedish Research Council partnerships.
+          </p>
+          <p class="nsf-disclaimer-text" style="margin-top: 8px;">
+            <strong>Disclaimer:</strong> Any opinions, findings, and conclusions or recommendations expressed in this material 
+            are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>VINES Research Project</h4>
+          <p>
+            NSF-SRC Track 1: Towards Resilient and Converged NextG Manufacturing Systems. 
+            A collaborative initiative by the University of Connecticut, The University of Iowa, 
+            and Mid Sweden University.
+          </p>
+          <p style="font-size: 0.8rem; color: #64748b;">
+            National Science Foundation Award #2549126 &amp; #2549127 • CISE Core Programs
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#overview">Project Overview</a></li>
+            <li><a href="#architecture">Substrates Architecture</a></li>
+            <li><a href="#thrusts">Research Thrusts</a></li>
+            <li><a href="#quad-chart">Quad Chart Poster</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#team">Team &amp; Openings</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Institutions</h5>
+          <ul class="footer-links">
+            <li><a href="https://uconn.edu" target="_blank" rel="noopener noreferrer">University of Connecticut</a></li>
+            <li><a href="https://uiowa.edu" target="_blank" rel="noopener noreferrer">The University of Iowa</a></li>
+            <li><a href="https://miun.se" target="_blank" rel="noopener noreferrer">Mid Sweden University (MIUN)</a></li>
+            <li><a href="https://nsf.gov" target="_blank" rel="noopener noreferrer">National Science Foundation</a></li>
+            <li><a href="https://github.com/ChuanyuXue/tsnkit" target="_blank" rel="noopener noreferrer">TSNKit GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 VINES Research Project. All rights reserved.
+        </div>
+        <div>
+          Designed for GitHub Pages Static Deployment • Verified Accessible (WCAG 2.1 AA)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BibTeX Modal Dialog -->
+  <div id="bibtexModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalBibtexTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="modalBibtexTitle" class="modal-title">BibTeX Citation</h3>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      </div>
+      <pre id="bibtexCode" class="modal-code-block"></pre>
+      <div class="modal-footer">
+        <button id="modalCopyBtn" class="btn btn-primary" style="font-size: 0.85rem; padding: 8px 16px;">Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

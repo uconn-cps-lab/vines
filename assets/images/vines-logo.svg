@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="vinesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+  </defs>
+  <!-- Icon Symbol: Interconnected Converged Nodes & NextG waves -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="60" height="60" rx="14" fill="url(#vinesGrad)" />
+    <!-- Network lattice & waves -->
+    <circle cx="18" cy="42" r="5" fill="#ffffff" />
+    <circle cx="42" cy="42" r="5" fill="#ffffff" />
+    <circle cx="30" cy="20" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+    <line x1="18" y1="42" x2="30" y2="20" stroke="#ffffff" stroke-width="2" stroke-dasharray="2,2"/>
+    <line x1="42" y1="42" x2="30" y2="20" stroke="#ffffff" stroke-width="2" />
+    <line x1="18" y1="42" x2="42" y2="42" stroke="#ffffff" stroke-width="2.5" />
+    <!-- Pulse rings (wireless & deterministic) -->
+    <circle cx="30" cy="20" r="12" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  </g>
+  <!-- Text Brand -->
+  <g transform="translate(82, 42)">
+    <text font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="34" fill="#0f172a" letter-spacing="1">VINES</text>
+    <text font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="11" fill="#0284c7" letter-spacing="1.5" x="2" y="20">NSF-SRC TRACK 1</text>
+  </g>
+</svg>
