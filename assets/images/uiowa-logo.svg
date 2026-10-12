@@ -1,14 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 90" width="400" height="90">
   <defs>
     <style>
-      .ui-dome { fill: #FFCD00; stroke: #000000; stroke-width: 2; }
-      .ui-main { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 32px; fill: #000000; letter-spacing: 1px; }
-      .ui-sub { font-family: 'Georgia', serif; font-weight: 700; font-size: 15px; fill: #FFCD00; }
-      .ui-sec { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 12px; fill: #555555; letter-spacing: 1.5px; }
+      .ui-main { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 26px; fill: #000000; letter-spacing: 0.5px; }
     </style>
   </defs>
   <!-- Dome / Seal Icon -->
-  <g transform="translate(10, 8)">
+  <g transform="translate(10, 9)">
     <circle cx="36" cy="36" r="34" fill="#000000" stroke="#FFCD00" stroke-width="3"/>
     <!-- Stylized Old Capitol Dome -->
     <path d="M26 48 L46 48 L46 36 L26 36 Z" fill="#FFCD00" />
@@ -23,8 +20,8 @@
     <rect x="20" y="49" width="32" height="3" fill="#FFCD00" rx="1" />
   </g>
   <!-- Text Block -->
-  <g transform="translate(90, 36)">
+  <g transform="translate(92, 38)">
     <text class="ui-main" x="0" y="0">THE UNIVERSITY</text>
-    <text class="ui-main" x="0" y="28">OF <tspan fill="#FFCD00" stroke="#000" stroke-width="1" paint-order="stroke fill">IOWA</tspan></text>
+    <text class="ui-main" x="0" y="27">OF <tspan fill="#FFCD00" stroke="#000000" stroke-width="0.75" paint-order="stroke fill">IOWA</tspan></text>
   </g>
 </svg>
