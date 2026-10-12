@@ -28,18 +28,20 @@ function initNavbar() {
   });
 
   if (mobileBtn && navMenu) {
-    mobileBtn.addEventListener('click', () => {
-      const isExpanded = navMenu.style.display === 'flex';
-      navMenu.style.display = isExpanded ? 'none' : 'flex';
-      if (!isExpanded) {
-        navMenu.style.flexDirection = 'column';
-        navMenu.style.position = 'absolute';
-        navMenu.style.top = '100%';
-        navMenu.style.left = '0';
-        navMenu.style.right = '0';
-        navMenu.style.background = '#ffffff';
-        navMenu.style.padding = '20px';
-        navMenu.style.boxShadow = '0 10px 15px -3px rgba(0,0,0,0.1)';
+    mobileBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navMenu.classList.toggle('is-open');
+    });
+
+    navMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('is-open');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+        navMenu.classList.remove('is-open');
       }
     });
   }
