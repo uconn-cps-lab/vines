@@ -53,6 +53,15 @@ const server = http.createServer((req, res) => {
   }
   if (cleanPath === '/') cleanPath = '/index.html';
 
+  // Support referer or query param for assets
+  if (!targetBranch && req.headers.referer) {
+    try {
+      const refUrl = new URL(req.headers.referer);
+      const refBranch = refUrl.searchParams.get('branch');
+      if (refBranch) targetBranch = refBranch;
+    } catch (e) {}
+  }
+
   const relPath = cleanPath.replace(/^\//, '');
   const ext = path.extname(cleanPath).toLowerCase();
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';
