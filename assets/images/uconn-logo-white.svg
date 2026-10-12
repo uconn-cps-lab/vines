@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90" width="340" height="90">
+  <defs>
+    <style>
+      .uconn-main-white { font-family: 'Arial Black', Impact, 'Helvetica Neue', sans-serif; font-weight: 900; font-size: 52px; fill: #FFFFFF; letter-spacing: 2px; }
+      .uconn-sub-white { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 13.5px; fill: #7C878E; letter-spacing: 2.2px; text-transform: uppercase; }
+    </style>
+  </defs>
+  <!-- UConn Wordmark in White -->
+  <g transform="translate(10, 52)">
+    <text class="uconn-main-white" x="0" y="0">UCONN</text>
+  </g>
+  <!-- University of Connecticut Subtitle in UConn Grey -->
+  <g transform="translate(12, 75)">
+    <text class="uconn-sub-white" x="0" y="0">UNIVERSITY OF CONNECTICUT</text>
+  </g>
+  <!-- Decorative Accent Line in UConn Grey -->
+  <rect x="12" y="82" width="280" height="3" fill="#7C878E" rx="1.5" />
+</svg>

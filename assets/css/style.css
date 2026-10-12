@@ -1,48 +1,56 @@
 /* ==========================================================================
-   VINES Academic Grant Project - Stylesheet
-   NSF Verticals-enabling Intelligent Network Systems (VINES)
-   Towards Resilient and Converged NextG Manufacturing Systems
+   VINES Academic Grant Project - UConn Branded Stylesheet
+   Strict adherence to University of Connecticut Brand Guidelines (brand.uconn.edu)
+   Primary Colors: Navy (#000E2F - Pantone 289), Grey (#7C878E - Pantone 430), White (#FFFFFF)
+   Accent Colors: UConn Blue (#004B87), Subtle Background (#F4F6F8)
    ========================================================================== */
 
 :root {
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: 'Inter', Arial, Helvetica, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
 
-  /* Primary Palette (Modern Academic / NSF Collaborative) */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
-  --bg-card: #ffffff;
-  --bg-accent: #e0f2fe;
+  /* UConn Official Brand Palette (brand.uconn.edu) */
+  --uconn-navy: #000E2F;       /* Primary Navy (Pantone 289) */
+  --uconn-grey: #7C878E;       /* Secondary Grey (Pantone 430) */
+  --uconn-white: #FFFFFF;      /* White */
+  --uconn-blue-accent: #004B87;/* Brand Accent Blue */
+  --uconn-blue-light: #EBF3F9; /* Tint Blue */
+  --uconn-bg-light: #F4F6F8;   /* Neutral Off-White / Grey */
 
-  --text-primary: #0f172a;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F4F6F8;
+  --bg-tertiary: #EAEFF2;
+  --bg-card: #FFFFFF;
+  --bg-accent: #EBF3F9;
+
+  --text-primary: #000E2F;     /* UConn Navy for high-contrast primary text */
   --text-secondary: #334155;
-  --text-muted: #64748b;
-  --text-light: #94a3b8;
+  --text-muted: #64748B;
+  --text-light: #7C878E;
 
-  --color-primary: #0284c7;
-  --color-primary-dark: #0369a1;
-  --color-primary-light: #38bdf8;
-  --color-secondary: #0f766e;
-  --color-accent: #f59e0b;
-  --color-danger: #ef4444;
-  --color-success: #10b981;
+  --color-primary: #000E2F;    /* Navy as primary */
+  --color-primary-dark: #00081C;
+  --color-primary-light: #004B87;
+  --color-secondary: #7C878E;  /* UConn Grey */
+  --color-accent: #004B87;     /* Accent Blue */
+  --color-danger: #C51628;     /* UConn Red alert */
+  --color-success: #059669;
 
-  --border-light: #e2e8f0;
-  --border-medium: #cbd5e1;
-  --border-dark: #94a3b8;
+  --border-light: #E2E8F0;
+  --border-medium: #CBD5E1;
+  --border-dark: #7C878E;
 
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-sm: 0 1px 2px 0 rgb(0 14 47 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 14 47 / 0.08), 0 2px 4px -2px rgb(0 14 47 / 0.06);
+  --shadow-lg: 0 10px 15px -3px rgb(0 14 47 / 0.1), 0 4px 6px -4px rgb(0 14 47 / 0.06);
+  --shadow-xl: 0 20px 25px -5px rgb(0 14 47 / 0.12), 0 8px 10px -6px rgb(0 14 47 / 0.08);
 
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
   --radius-full: 9999px;
 
-  --header-height: 72px;
+  --header-height: 76px;
   --container-max: 1240px;
 }
 
@@ -56,7 +64,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 16px);
+  scroll-padding-top: calc(var(--header-height) + 60px);
 }
 
 body {
@@ -69,13 +77,13 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--uconn-blue-accent);
   text-decoration: none;
   transition: color 0.15s ease, opacity 0.15s ease;
 }
 
 a:hover {
-  color: var(--color-primary-dark);
+  color: var(--uconn-navy);
 }
 
 img {
@@ -94,61 +102,84 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   Branch & Notification Top Bar
+   Official UConn Institutional Header Bar (brand.uconn.edu)
    -------------------------------------------------------------------------- */
-.top-notice-bar {
-  background: #0f172a;
-  color: #e2e8f0;
-  font-size: 0.8125rem;
-  padding: 8px 0;
-  border-bottom: 1px solid #1e293b;
+.uconn-global-header {
+  background-color: var(--uconn-navy);
+  border-bottom: 3px solid var(--uconn-grey);
+  color: #FFFFFF;
+  padding: 10px 0;
+  position: relative;
+  z-index: 1010;
 }
 
-.top-notice-inner {
+.uconn-global-inner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.notice-meta {
+.uconn-brand-link {
   display: flex;
   align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 14px;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
-.notice-badge {
-  background: rgba(2, 132, 199, 0.25);
-  color: #38bdf8;
+.uconn-wordmark-img {
+  height: 32px;
+  width: auto;
+}
+
+.uconn-department-title {
+  font-size: 0.95rem;
   font-weight: 700;
-  padding: 2px 8px;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-size: 0.72rem;
+  color: #FFFFFF;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 14px;
 }
 
-.branch-switch-pill {
+.uconn-global-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.uconn-global-links a {
+  color: #E2E8F0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.uconn-global-links a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Branch & Notice Pill */
+.uconn-branch-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
   padding: 3px 10px;
   border-radius: var(--radius-full);
   font-size: 0.75rem;
-  font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.2s ease;
 }
 
-.branch-switch-pill:hover {
-  background: #0284c7;
-  color: #ffffff;
-  border-color: #0284c7;
+.uconn-branch-badge:hover {
+  background: var(--uconn-blue-accent);
+  color: #FFFFFF;
 }
 
 /* --------------------------------------------------------------------------
@@ -158,11 +189,12 @@ img {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-medium);
   height: var(--header-height);
+  box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s ease;
 }
 
@@ -184,7 +216,7 @@ img {
 }
 
 .site-logo {
-  height: 44px;
+  height: 46px;
   width: auto;
 }
 
@@ -197,14 +229,14 @@ img {
   font-size: 1.35rem;
   font-weight: 900;
   letter-spacing: -0.5px;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
   line-height: 1.1;
 }
 
 .brand-subtitle {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--uconn-blue-accent);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -219,13 +251,13 @@ img {
 .nav-item a {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: var(--uconn-navy);
   padding: 6px 4px;
   position: relative;
 }
 
 .nav-item a:hover {
-  color: var(--color-primary);
+  color: var(--uconn-blue-accent);
 }
 
 .nav-item a::after {
@@ -234,8 +266,8 @@ img {
   bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
-  background: var(--color-primary);
+  height: 3px;
+  background: var(--uconn-navy);
   transition: width 0.2s ease;
 }
 
@@ -244,15 +276,17 @@ img {
 }
 
 .nav-cta {
-  background: var(--color-primary);
+  background: var(--uconn-navy) !important;
   color: #ffffff !important;
   padding: 8px 16px !important;
   border-radius: var(--radius-sm);
   font-size: 0.85rem !important;
+  border: 1px solid var(--uconn-navy);
 }
 
 .nav-cta:hover {
-  background: var(--color-primary-dark);
+  background: var(--uconn-blue-accent) !important;
+  border-color: var(--uconn-blue-accent) !important;
 }
 
 .nav-cta::after {
@@ -265,18 +299,17 @@ img {
   border: none;
   cursor: pointer;
   padding: 8px;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
 }
 
 /* --------------------------------------------------------------------------
-   Hero Section
+   Hero Section (UConn Branded)
    -------------------------------------------------------------------------- */
 .hero-section {
   position: relative;
-  background: radial-gradient(circle at 80% 20%, #e0f2fe 0%, #ffffff 50%, #f8fafc 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F6F8 100%);
   padding: 64px 0 48px;
-  border-bottom: 1px solid var(--border-light);
-  overflow: hidden;
+  border-bottom: 2px solid var(--uconn-grey);
 }
 
 .hero-grid {
@@ -293,28 +326,22 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #eff6ff;
-  border: 1px solid #bfdbfe;
-  color: #1d4ed8;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   padding: 6px 14px;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
   font-size: 0.8125rem;
   font-weight: 700;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .hero-pill-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #2563eb;
-  animation: pulseDot 2s infinite ease-in-out;
-}
-
-@keyframes pulseDot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.85); }
+  background: #38bdf8;
 }
 
 .hero-title {
@@ -322,14 +349,12 @@ img {
   font-weight: 900;
   line-height: 1.15;
   letter-spacing: -1px;
-  color: #091e42;
+  color: var(--uconn-navy);
   margin-bottom: 18px;
 }
 
 .hero-title .gradient-text {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--uconn-blue-accent);
 }
 
 .hero-description {
@@ -352,57 +377,60 @@ img {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   padding: 12px 24px;
-  border-radius: var(--radius-md);
-  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.2s ease;
   text-decoration: none;
 }
 
 .btn-primary {
-  background: var(--color-primary);
-  color: #ffffff;
-  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+  background: var(--uconn-navy);
+  color: #FFFFFF;
+  border-color: var(--uconn-navy);
+  box-shadow: 0 4px 10px rgb(0 14 47 / 0.18);
 }
 
 .btn-primary:hover {
-  background: var(--color-primary-dark);
-  color: #ffffff;
+  background: var(--uconn-blue-accent);
+  border-color: var(--uconn-blue-accent);
+  color: #FFFFFF;
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
 }
 
 .btn-secondary {
-  background: #ffffff;
-  color: var(--text-primary);
-  border: 1px solid var(--border-medium);
+  background: #FFFFFF;
+  color: var(--uconn-navy);
+  border-color: var(--uconn-navy);
 }
 
 .btn-secondary:hover {
-  background: var(--bg-tertiary);
-  color: var(--text-primary);
-  border-color: var(--border-dark);
+  background: var(--uconn-bg-light);
+  color: var(--uconn-blue-accent);
+  border-color: var(--uconn-blue-accent);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  color: var(--uconn-navy);
+  border: 2px solid var(--uconn-grey);
 }
 
 .btn-outline:hover {
-  background: var(--color-primary);
-  color: #ffffff;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
+  border-color: var(--uconn-navy);
 }
 
-/* Hero Metadata Strip */
+/* Grant Metadata Strip */
 .grant-metadata-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-top: 4px solid var(--uconn-navy);
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   padding: 24px;
   display: grid;
@@ -418,23 +446,22 @@ img {
 
 .meta-label {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--text-muted);
+  color: var(--uconn-grey);
   margin-bottom: 4px;
 }
 
 .meta-value {
   font-size: 0.98rem;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-weight: 800;
+  color: var(--uconn-navy);
 }
 
 .meta-sub {
   font-size: 0.78rem;
   color: var(--text-muted);
-  font-weight: normal;
 }
 
 /* Collaborative Institutions Strip */
@@ -445,14 +472,14 @@ img {
   flex-wrap: wrap;
   gap: 28px;
   padding-top: 16px;
-  border-top: 1px solid var(--border-light);
+  border-top: 1px solid var(--border-medium);
 }
 
 .inst-heading {
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--uconn-navy);
   letter-spacing: 1px;
 }
 
@@ -468,12 +495,12 @@ img {
   align-items: center;
   gap: 10px;
   padding: 6px 14px;
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
   font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-weight: 700;
+  color: var(--uconn-navy);
 }
 
 .inst-badge img {
@@ -482,10 +509,10 @@ img {
 }
 
 .inst-badge .lead-tag {
-  background: #0284c7;
-  color: #ffffff;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   font-size: 0.65rem;
-  font-weight: 800;
+  font-weight: 900;
   padding: 2px 6px;
   border-radius: var(--radius-sm);
   text-transform: uppercase;
@@ -496,11 +523,11 @@ img {
    -------------------------------------------------------------------------- */
 .section {
   padding: 80px 0;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-medium);
 }
 
 .section.alt-bg {
-  background-color: var(--bg-secondary);
+  background-color: var(--uconn-bg-light);
 }
 
 .section-header {
@@ -511,11 +538,11 @@ img {
 
 .section-tag {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--color-primary);
+  color: var(--uconn-blue-accent);
   margin-bottom: 10px;
 }
 
@@ -523,7 +550,7 @@ img {
   font-size: 2.25rem;
   font-weight: 900;
   letter-spacing: -0.7px;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
   margin-bottom: 16px;
   line-height: 1.25;
 }
@@ -545,16 +572,17 @@ img {
 }
 
 .problem-card {
-  background: #ffffff;
-  border: 2px solid #fed7aa;
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-top: 5px solid var(--uconn-grey);
+  border-radius: var(--radius-md);
   padding: 32px;
   box-shadow: var(--shadow-sm);
 }
 
 .problem-card .card-badge {
-  background: #ea580c;
-  color: #ffffff;
+  background: var(--uconn-grey);
+  color: #FFFFFF;
   display: inline-block;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
@@ -566,16 +594,17 @@ img {
 }
 
 .solution-card {
-  background: #ffffff;
-  border: 2px solid #bae6fd;
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-top: 5px solid var(--uconn-navy);
+  border-radius: var(--radius-md);
   padding: 32px;
   box-shadow: var(--shadow-sm);
 }
 
 .solution-card .card-badge {
-  background: #0284c7;
-  color: #ffffff;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   display: inline-block;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
@@ -589,7 +618,7 @@ img {
 .card-heading {
   font-size: 1.45rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
   margin-bottom: 14px;
 }
 
@@ -607,9 +636,9 @@ img {
 }
 
 .vector-box {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
   padding: 28px;
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -618,6 +647,7 @@ img {
 .vector-box:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
+  border-color: var(--uconn-navy);
 }
 
 .vector-header {
@@ -630,12 +660,12 @@ img {
 .vector-title {
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
 }
 
 .vector-tag {
-  background: var(--bg-tertiary);
-  color: var(--text-secondary);
+  background: var(--uconn-bg-light);
+  color: var(--uconn-navy);
   font-weight: 700;
   font-size: 0.75rem;
   padding: 3px 8px;
@@ -662,22 +692,23 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--color-primary);
+  color: var(--uconn-blue-accent);
   font-size: 1.1rem;
 }
 
 .vector-convergence {
-  border-color: #38bdf8;
-  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+  border-color: var(--uconn-navy);
+  border-top: 4px solid var(--uconn-navy);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F6F8 100%);
 }
 
 /* --------------------------------------------------------------------------
-   Architecture & Substrates (Application, Cyber, Physical)
+   Architecture & Substrates
    -------------------------------------------------------------------------- */
 .architecture-viewer {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   padding: 36px;
   margin-bottom: 40px;
@@ -692,32 +723,32 @@ img {
 .substrate-tabs {
   display: flex;
   gap: 12px;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 2px solid var(--border-medium);
   padding-bottom: 12px;
   margin-bottom: 24px;
   flex-wrap: wrap;
 }
 
 .tab-btn {
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border-light);
-  color: var(--text-secondary);
+  background: var(--uconn-bg-light);
+  border: 1px solid var(--border-medium);
+  color: var(--uconn-navy);
   padding: 10px 20px;
   font-size: 0.9rem;
   font-weight: 700;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .tab-btn:hover {
-  background: #e2e8f0;
+  background: #E2E8F0;
 }
 
 .tab-btn.active {
-  background: var(--color-primary);
-  color: #ffffff;
-  border-color: var(--color-primary);
+  background: var(--uconn-navy);
+  color: #FFFFFF;
+  border-color: var(--uconn-navy);
 }
 
 .substrate-panel {
@@ -741,9 +772,9 @@ img {
 }
 
 .sub-detail-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
+  background: var(--uconn-bg-light);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
   padding: 20px;
 }
 
@@ -754,9 +785,9 @@ img {
 
 .sub-detail-title {
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 6px;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
 }
 
 .sub-detail-text {
@@ -775,9 +806,9 @@ img {
 }
 
 .thrust-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
   padding: 36px;
   box-shadow: var(--shadow-sm);
   display: grid;
@@ -788,7 +819,7 @@ img {
 
 .thrust-card:hover {
   box-shadow: var(--shadow-lg);
-  border-color: var(--border-medium);
+  border-color: var(--uconn-navy);
 }
 
 .thrust-number-col {
@@ -800,21 +831,21 @@ img {
 .thrust-badge-circle {
   width: 64px;
   height: 64px;
-  border-radius: 50%;
-  background: var(--color-primary);
-  color: #ffffff;
+  border-radius: var(--radius-sm);
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 900;
-  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+  box-shadow: 0 4px 10px rgb(0 14 47 / 0.2);
 }
 
 .thrust-connector-line {
   width: 2px;
   height: 100%;
-  background: var(--border-light);
+  background: var(--border-medium);
   margin-top: 12px;
 }
 
@@ -828,7 +859,7 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--color-primary);
+  color: var(--uconn-blue-accent);
   margin-bottom: 6px;
 }
 
@@ -836,7 +867,7 @@ img {
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 12px;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
 }
 
 .thrust-desc {
@@ -854,16 +885,16 @@ img {
 }
 
 .thrust-point {
-  background: var(--bg-secondary);
-  border-left: 3px solid var(--color-primary);
+  background: var(--uconn-bg-light);
+  border-left: 4px solid var(--uconn-navy);
   padding: 14px 16px;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 .thrust-point-title {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.92rem;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
   margin-bottom: 4px;
 }
 
@@ -874,30 +905,32 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   Quad Chart Section (Poster Viewer & Modal)
+   Quad Chart Section (Poster Viewer)
    -------------------------------------------------------------------------- */
 .quad-chart-section {
-  background: #0f172a;
-  color: #ffffff;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   padding: 80px 0;
+  border-top: 3px solid var(--uconn-grey);
+  border-bottom: 3px solid var(--uconn-grey);
 }
 
 .quad-chart-section .section-title {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .quad-chart-section .section-subtitle {
-  color: #94a3b8;
+  color: #CBD5E1;
 }
 
 .quad-chart-section .section-tag {
-  color: #38bdf8;
+  color: #7C878E;
 }
 
 .quad-viewer-card {
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: var(--radius-lg);
+  background: #031438;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
   padding: 28px;
   box-shadow: var(--shadow-xl);
 }
@@ -910,7 +943,7 @@ img {
   gap: 16px;
   margin-bottom: 20px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #334155;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .quad-info-label {
@@ -919,7 +952,7 @@ img {
   gap: 10px;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: #E2E8F0;
 }
 
 .quad-actions {
@@ -931,9 +964,9 @@ img {
   width: 100%;
   height: 600px;
   background: #000000;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   overflow: hidden;
-  border: 1px solid #334155;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .quad-pdf-frame {
@@ -942,18 +975,17 @@ img {
   border: none;
 }
 
-/* Interactive HTML Quad Chart Replica (for high accessibility) */
 .quad-html-replica {
   margin-top: 32px;
-  background: #ffffff;
-  color: #0f172a;
-  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  color: var(--uconn-navy);
+  border-radius: var(--radius-sm);
   padding: 24px;
 }
 
 .replica-header {
-  background: #0284c7;
-  color: #ffffff;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   padding: 16px;
   border-radius: var(--radius-sm);
   font-size: 1.1rem;
@@ -969,8 +1001,8 @@ img {
 }
 
 .replica-cell {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: var(--uconn-bg-light);
+  border: 1px solid var(--border-medium);
   border-radius: var(--radius-sm);
   padding: 18px;
 }
@@ -979,11 +1011,11 @@ img {
   font-size: 1.05rem;
   font-weight: 800;
   margin-bottom: 10px;
-  color: #0369a1;
+  color: var(--uconn-navy);
 }
 
 /* --------------------------------------------------------------------------
-   Software & Testbed Section
+   Software & Testbeds
    -------------------------------------------------------------------------- */
 .tools-grid {
   display: grid;
@@ -993,9 +1025,10 @@ img {
 }
 
 .tool-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-top: 4px solid var(--uconn-navy);
+  border-radius: var(--radius-md);
   padding: 28px;
   box-shadow: var(--shadow-sm);
   display: flex;
@@ -1007,12 +1040,12 @@ img {
 .tool-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: #38bdf8;
+  border-color: var(--uconn-navy);
 }
 
 .tool-badge {
-  background: #eff6ff;
-  color: #1d4ed8;
+  background: var(--uconn-bg-light);
+  color: var(--uconn-navy);
   font-size: 0.72rem;
   font-weight: 800;
   padding: 3px 8px;
@@ -1021,13 +1054,14 @@ img {
   margin-bottom: 12px;
   display: inline-block;
   align-self: flex-start;
+  border: 1px solid var(--border-medium);
 }
 
 .tool-title {
   font-size: 1.35rem;
   font-weight: 800;
   margin-bottom: 8px;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
 }
 
 .tool-desc {
@@ -1046,19 +1080,20 @@ img {
 }
 
 .tool-tag {
-  background: var(--bg-tertiary);
-  color: var(--text-muted);
+  background: var(--uconn-bg-light);
+  color: var(--uconn-grey);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 2px 8px;
   border-radius: var(--radius-sm);
+  border: 1px solid var(--border-medium);
 }
 
 /* Testbeds */
 .testbeds-strip {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
   padding: 32px;
 }
 
@@ -1070,24 +1105,25 @@ img {
 }
 
 .testbed-box {
-  background: var(--bg-secondary);
-  border-radius: var(--radius-md);
+  background: var(--uconn-bg-light);
+  border-radius: var(--radius-sm);
   padding: 20px;
-  border-top: 3px solid var(--color-primary);
+  border-top: 3px solid var(--uconn-navy);
 }
 
 .testbed-inst {
   font-size: 0.8rem;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--uconn-navy);
   text-transform: uppercase;
   margin-bottom: 4px;
 }
 
 .testbed-name {
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 8px;
+  color: var(--uconn-navy);
 }
 
 .testbed-desc {
@@ -1109,7 +1145,7 @@ img {
   gap: 16px;
   margin-bottom: 24px;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--border-light);
+  border-bottom: 3px solid var(--uconn-navy);
 }
 
 .team-inst-logo {
@@ -1119,8 +1155,8 @@ img {
 
 .team-inst-title {
   font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--text-primary);
+  font-weight: 900;
+  color: var(--uconn-navy);
 }
 
 .team-grid {
@@ -1130,9 +1166,9 @@ img {
 }
 
 .person-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
   padding: 24px;
   box-shadow: var(--shadow-sm);
   display: flex;
@@ -1144,22 +1180,21 @@ img {
 .person-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-  border-color: #38bdf8;
+  border-color: var(--uconn-navy);
 }
 
 .person-avatar {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  background: #e0f2fe;
-  color: #0369a1;
+  border-radius: var(--radius-sm);
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   font-size: 1.25rem;
   flex-shrink: 0;
-  border: 2px solid #bae6fd;
 }
 
 .person-info {
@@ -1170,14 +1205,14 @@ img {
 .person-name {
   font-size: 1.1rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
   margin-bottom: 2px;
 }
 
 .person-role {
   font-size: 0.82rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--uconn-blue-accent);
   margin-bottom: 4px;
 }
 
@@ -1195,22 +1230,24 @@ img {
 
 .person-link {
   font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-weight: 700;
+  color: var(--uconn-navy);
   display: inline-flex;
   align-items: center;
   gap: 4px;
 }
 
 .person-link:hover {
-  color: var(--color-primary);
+  color: var(--uconn-blue-accent);
+  text-decoration: underline;
 }
 
 /* Openings Callout Card */
 .openings-callout {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-  color: #ffffff;
-  border-radius: var(--radius-lg);
+  background: var(--uconn-navy);
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  border-top: 4px solid var(--uconn-grey);
   padding: 36px;
   box-shadow: var(--shadow-lg);
   display: flex;
@@ -1228,7 +1265,7 @@ img {
 
 .openings-content p {
   font-size: 0.95rem;
-  color: #e0f2fe;
+  color: #E2E8F0;
   max-width: 680px;
   line-height: 1.6;
 }
@@ -1244,9 +1281,9 @@ img {
   gap: 16px;
   margin-bottom: 28px;
   padding: 16px 20px;
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
 }
 
 .pub-search-input {
@@ -1259,8 +1296,8 @@ img {
 }
 
 .pub-search-input:focus {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+  border-color: var(--uconn-navy);
+  box-shadow: 0 0 0 3px rgb(0 14 47 / 0.15);
 }
 
 .pub-tags {
@@ -1270,19 +1307,20 @@ img {
 }
 
 .pub-filter-btn {
-  background: var(--bg-tertiary);
-  border: none;
+  background: var(--uconn-bg-light);
+  border: 1px solid var(--border-medium);
   padding: 6px 12px;
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  color: var(--text-secondary);
+  color: var(--uconn-navy);
 }
 
 .pub-filter-btn.active {
-  background: var(--color-primary);
-  color: #ffffff;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
+  border-color: var(--uconn-navy);
 }
 
 .pub-list {
@@ -1292,9 +1330,10 @@ img {
 }
 
 .pub-item {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-left: 4px solid var(--uconn-navy);
+  border-radius: var(--radius-sm);
   padding: 22px;
   box-shadow: var(--shadow-sm);
   display: flex;
@@ -1303,7 +1342,7 @@ img {
 }
 
 .pub-item:hover {
-  border-color: #38bdf8;
+  border-color: var(--uconn-navy);
   box-shadow: var(--shadow-md);
 }
 
@@ -1315,8 +1354,8 @@ img {
 }
 
 .pub-venue-badge {
-  background: #0f172a;
-  color: #ffffff;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   font-weight: 800;
   font-size: 0.72rem;
   padding: 2px 8px;
@@ -1324,18 +1363,19 @@ img {
 }
 
 .pub-year-badge {
-  background: #e0f2fe;
-  color: #0369a1;
+  background: var(--uconn-bg-light);
+  color: var(--uconn-navy);
   font-weight: 700;
   font-size: 0.72rem;
   padding: 2px 8px;
   border-radius: var(--radius-sm);
+  border: 1px solid var(--border-medium);
 }
 
 .pub-title {
   font-size: 1.15rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
   margin-bottom: 6px;
   line-height: 1.4;
 }
@@ -1347,10 +1387,9 @@ img {
 }
 
 .pub-authors strong {
-  color: #0f172a;
+  color: var(--uconn-navy);
   text-decoration: underline;
-  text-decoration-color: #bae6fd;
-  text-underline-offset: 3px;
+  text-decoration-color: var(--uconn-grey);
 }
 
 .pub-booktitle {
@@ -1367,11 +1406,11 @@ img {
 }
 
 .pub-btn {
-  background: var(--bg-tertiary);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-light);
+  background: var(--uconn-bg-light);
+  color: var(--uconn-navy);
+  border: 1px solid var(--border-medium);
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
   cursor: pointer;
@@ -1381,8 +1420,7 @@ img {
 }
 
 .pub-btn:hover {
-  background: #e2e8f0;
-  color: var(--text-primary);
+  background: #E2E8F0;
 }
 
 /* --------------------------------------------------------------------------
@@ -1395,9 +1433,10 @@ img {
 }
 
 .impact-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-top: 4px solid var(--uconn-navy);
+  border-radius: var(--radius-sm);
   padding: 28px;
   box-shadow: var(--shadow-sm);
 }
@@ -1411,7 +1450,7 @@ img {
   font-size: 1.15rem;
   font-weight: 800;
   margin-bottom: 8px;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
 }
 
 .impact-desc {
@@ -1437,7 +1476,7 @@ img {
 .timeline-date {
   font-weight: 800;
   font-size: 0.85rem;
-  color: var(--color-primary);
+  color: var(--uconn-navy);
   width: 110px;
   flex-shrink: 0;
   text-align: right;
@@ -1448,7 +1487,7 @@ img {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--color-primary);
+  background: var(--uconn-navy);
   margin-top: 6px;
   flex-shrink: 0;
   position: relative;
@@ -1461,13 +1500,13 @@ img {
   left: 5px;
   width: 2px;
   height: calc(100% + 24px);
-  background: var(--border-light);
+  background: var(--border-medium);
 }
 
 .timeline-content {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
   padding: 14px 18px;
   flex-grow: 1;
 }
@@ -1478,14 +1517,12 @@ img {
   line-height: 1.5;
 }
 
-/* --------------------------------------------------------------------------
-   NSF Acknowledgment & Disclaimer Box
-   -------------------------------------------------------------------------- */
+/* Mandatory NSF Box */
 .nsf-disclaimer-box {
-  background: #f8fafc;
+  background: var(--uconn-bg-light);
   border: 1px solid var(--border-medium);
-  border-left: 5px solid #0284c7;
-  border-radius: var(--radius-md);
+  border-left: 6px solid var(--uconn-navy);
+  border-radius: var(--radius-sm);
   padding: 24px;
   margin-top: 48px;
 }
@@ -1505,7 +1542,7 @@ img {
 .nsf-disclaimer-title {
   font-size: 1rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--uconn-navy);
 }
 
 .nsf-disclaimer-text {
@@ -1515,13 +1552,13 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   Footer
+   Official UConn Footer (brand.uconn.edu)
    -------------------------------------------------------------------------- */
 .site-footer {
-  background: #0f172a;
-  color: #94a3b8;
+  background: var(--uconn-navy);
+  color: #CBD5E1;
   padding: 60px 0 30px;
-  border-top: 1px solid #1e293b;
+  border-top: 4px solid var(--uconn-grey);
 }
 
 .footer-grid {
@@ -1532,7 +1569,7 @@ img {
 }
 
 .footer-brand h4 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 1.3rem;
   font-weight: 800;
   margin-bottom: 12px;
@@ -1546,9 +1583,9 @@ img {
 }
 
 .footer-col h5 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -1562,17 +1599,18 @@ img {
 }
 
 .footer-links a {
-  color: #94a3b8;
+  color: #CBD5E1;
   font-size: 0.88rem;
 }
 
 .footer-links a:hover {
-  color: #ffffff;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .footer-bottom {
   padding-top: 24px;
-  border-top: 1px solid #1e293b;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1581,14 +1619,28 @@ img {
   font-size: 0.8rem;
 }
 
-/* --------------------------------------------------------------------------
-   BibTeX Modal
-   -------------------------------------------------------------------------- */
+.uconn-legal-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.uconn-legal-links a {
+  color: #A0AEC0;
+  text-decoration: none;
+}
+
+.uconn-legal-links a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Modal Dialog */
 .modal-overlay {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(0, 14, 47, 0.75);
   backdrop-filter: blur(4px);
   z-index: 2000;
   align-items: center;
@@ -1601,13 +1653,13 @@ img {
 }
 
 .modal-window {
-  background: #ffffff;
-  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border-radius: var(--radius-sm);
   max-width: 640px;
   width: 100%;
   padding: 28px;
   box-shadow: var(--shadow-xl);
-  position: relative;
+  border-top: 6px solid var(--uconn-navy);
 }
 
 .modal-header {
@@ -1620,7 +1672,7 @@ img {
 .modal-title {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--uconn-navy);
 }
 
 .modal-close-btn {
@@ -1628,12 +1680,12 @@ img {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--text-muted);
+  color: var(--uconn-grey);
 }
 
 .modal-code-block {
-  background: #0f172a;
-  color: #e2e8f0;
+  background: var(--uconn-navy);
+  color: #FFFFFF;
   padding: 16px;
   border-radius: var(--radius-sm);
   font-family: var(--font-mono);
@@ -1650,9 +1702,7 @@ img {
   gap: 10px;
 }
 
-/* --------------------------------------------------------------------------
-   Responsive Media Queries
-   -------------------------------------------------------------------------- */
+/* Responsive */
 @media (max-width: 992px) {
   .hero-title { font-size: 2.25rem; }
   .quad-overview-grid { grid-template-columns: 1fr; }
@@ -1670,5 +1720,5 @@ img {
   .hero-title { font-size: 1.85rem; }
   .section-title { font-size: 1.75rem; }
   .quad-pdf-frame-container { height: 400px; }
-  .top-notice-inner { flex-direction: column; align-items: flex-start; }
+  .uconn-global-inner { flex-direction: column; align-items: flex-start; }
 }
