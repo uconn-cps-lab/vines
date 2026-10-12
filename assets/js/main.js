@@ -117,41 +117,41 @@ function initPublications() {
    -------------------------------------------------------------------------- */
 const bibtexDatabase = {
   "nsdi26": `@inproceedings{keepon2026,
-  author    = {Xue, Chuanyu and Zhang, Tianyu and Han, Song},
+  author    = {Xue, Chuanyu and Zhang, Tianyu and Loveless, Andrew and Han, Song},
   title     = {KeepON: Supporting Deterministic Traffic on Standard NICs},
   booktitle = {Proceedings of the 23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI '26)},
   year      = {2026},
   url       = {https://www.usenix.org/conference/nsdi26}
 }`,
   "rtss26": `@inproceedings{bwp2026,
-  author    = {Zhang, Tianyu and Han, Song and Zhou, Shengli and Wang, Bing},
+  author    = {Zhang, Tianyu and Balamurali, Subasree and Mondal, Mainak and Hu, X. Sharon and Han, Song},
   title     = {BWP-aware Real-Time Scheduling for Heterogeneous UEs in Industrial 5G Systems},
   booktitle = {Proceedings of the 47th IEEE Real-Time Systems Symposium (RTSS '26)},
   year      = {2026}
 }`,
   "rtss25": `@inproceedings{tsnkit2025,
-  author    = {Xue, Chuanyu and Zhang, Tianyu and Han, Song},
-  title     = {TSNKit: An Open Source TSN Scheduling Evaluation Tool},
+  author    = {Xue, Chuanyu and Hu, Elaine and Zhang, Tianyu and Han, Song},
+  title     = {Work-in-Progress: An Open-Source Evaluation Framework for Time-Sensitive Networking Scheduling Research},
   booktitle = {Proceedings of the 46th IEEE Real-Time Systems Symposium (RTSS '25 - Brief Presentation)},
   year      = {2025},
   url       = {https://github.com/ChuanyuXue/tsnkit}
 }`,
   "tmc25": `@article{5gtps2025,
-  author    = {Zhang, Tianyu and Xue, Chuanyu and Han, Song},
+  author    = {Zhang, Tianyu and Wang, Jiachen and Hu, X. Sharon and Han, Song},
   title     = {5G-TPS: A Two-Phase Real-Time Scheduling and Adaptation Framework for 5G Radio Access Networks},
   journal   = {IEEE Transactions on Mobile Computing (TMC)},
   year      = {2025},
   doi       = {10.1109/TMC.2025.11129907}
 }`,
   "csur25": `@article{csur2025tsn,
-  author    = {Zhang, Tianyu and Gidlund, Mikael and Han, Song},
+  author    = {Xue, Chuanyu and Zhang, Tianyu and Zhou, Yuanbin and Nixon, Mark and Loveless, Andrew and Han, Song},
   title     = {A Survey and Experimental Study of Real-Time Scheduling Methods for 802.1Qbv TSN Networks},
   journal   = {ACM Computing Surveys (CSUR)},
   year      = {2025},
   doi       = {10.1145/3736715}
 }`,
   "rtas24": `@inproceedings{rtas2024tsn,
-  author    = {Zhang, Tianyu and Xue, Chuanyu and Han, Song},
+  author    = {Xue, Chuanyu and Zhang, Tianyu and Zhou, Yuanbin and Loveless, Andrew and Nixon, Mark and Han, Song},
   title     = {Real-Time Scheduling for 802.1Qbv Time-Sensitive Networking (TSN): A Systematic Review and Experimental Study},
   booktitle = {Proceedings of the 30th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS '24)},
   year      = {2024}
