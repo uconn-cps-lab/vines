@@ -87,7 +87,7 @@ async function req(path, method = 'GET') {
       { name: 'tools', sel: '#software' },
       { name: 'pubs', sel: '#publications' },
       { name: 'team', sel: '#team' },
-      { name: 'openings', sel: '#openings' },
+      { name: 'impacts', sel: '#impacts' },
       { name: 'footer', sel: '.site-footer' }
     ];
 
