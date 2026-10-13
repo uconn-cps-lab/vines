@@ -136,7 +136,7 @@ const bibtexDatabase = {
   title     = {Work-in-Progress: An Open-Source Evaluation Framework for Time-Sensitive Networking Scheduling Research},
   booktitle = {Proceedings of the 46th IEEE Real-Time Systems Symposium (RTSS '25 - Brief Presentation)},
   year      = {2025},
-  url       = {https://github.com/ChuanyuXue/tsnkit}
+  url       = {https://2025.rtss.org/}
 }`,
   "tmc25": `@article{5gtps2025,
   author    = {Zhang, Tianyu and Wang, Jiachen and Hu, X. Sharon and Han, Song},
