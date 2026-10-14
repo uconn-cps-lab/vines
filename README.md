@@ -34,7 +34,7 @@ The website is a pure static web platform built with semantic HTML5, modern CSS3
 4. **Grant Quad Chart Poster:** Embedded interactive viewer for `Track1_2549126_UConn.pdf` with fullscreen opening, PDF download, and an accessible HTML replica.
 5. **Open Source Tools & Testbeds:** Links and documentation for **TSNKit** (RTSS'25), **KeepON** (NSDI'26), **5G-TPS** (TMC'25), and university testbed facilities.
 6. **Publications & Presentations:** Searchable, tag-filtered publication catalog with 1-click BibTeX copy dialogs.
-7. **Research Consortium:** Profiles for Lead PI Dr. Song Han, Co-PIs Dr. Shengli Zhou and Dr. Bing Wang (UConn), PI Dr. Tianyu Zhang and Co-PI Dr. Steve Goddard (UIowa), Prof. Mikael Gidlund and Prof. Tingting Zhang (MIUN), plus recruitment openings for Ph.D. students and postdocs.
+7. **Research Consortium:** Profiles for Lead PI Dr. Song Han, Co-PIs Dr. Shengli Zhou and Dr. Bing Wang (UConn), PI Dr. Tianyu Zhang and Co-PI Dr. Steve Goddard (UIowa), Prof. Mikael Gidlund and Dr. Aamir Mahmood (MIUN).
 8. **Broader Impacts & News:** Workforce development, SMM democratization, transatlantic training, and timeline milestones.
 9. **Mandatory NSF Acknowledgment & Disclaimer:** Full statutory compliance with NSF funding guidelines.
 
