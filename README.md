@@ -3,7 +3,7 @@
 **NSF-SRC Track 1 Collaborative Research Grant**  
 - **Lead Award:** NSF Award #2549126 (University of Connecticut)
 - **Collaborative Award:** NSF Award #2549127 (The University of Iowa)
-- **International Partner:** Mid Sweden University (Mittuniversitetet / MIUN), STC Research Centre
+- **Collaborative Partner:** Mid Sweden University (Mittuniversitetet / MIUN), STC Research Centre
 - **Sponsor:** National Science Foundation (NSF) — Directorate for Computer and Information Science and Engineering (CISE), Verticals-enabling Intelligent Network Systems (VINES) Track 1 & Global Venture Fund
 
 ---
