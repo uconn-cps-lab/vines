@@ -832,27 +832,33 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .thrust-badge-circle {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
+  flex-shrink: 0;
   background: var(--color-primary);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 900;
-  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+  font-size: 1.45rem;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
 }
 
 .thrust-connector-line {
   width: 2px;
-  height: 100%;
+  flex: 1 1 auto;
+  min-height: 24px;
   background: var(--border-light);
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .thrust-body {
