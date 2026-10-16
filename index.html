@@ -36,7 +36,7 @@
       <a href="#home" class="site-brand" aria-label="VINES Project Homepage">
         <div class="brand-text-block">
           <span class="brand-title">VINES</span>
-          <span class="brand-subtitle">NSF-SRC Track 1</span>
+          <span class="brand-subtitle">NSF Verticals-enabling Intelligent Network Systems (VINES) • Track 1</span>
         </div>
       </a>
 
@@ -66,7 +66,8 @@
     <section class="hero-section">
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="hero-pill-badge">
+          <!-- Hero badge moved to top brand subtitle per Dr. Han instruction -->
+          <div class="hero-pill-badge" style="display: none;" aria-hidden="true">
             <span class="hero-pill-dot"></span>
             <span>NSF Verticals-enabling Intelligent Network Systems (VINES) • Track 1</span>
           </div>
@@ -137,10 +138,7 @@
                 <img src="assets/images/miun-logo.svg" alt="Mid Sweden University Logo">
                 <span>Collaborative</span>
               </div>
-              <div class="inst-badge">
-                <img src="assets/images/nsf-logo.svg" alt="National Science Foundation Logo">
-                <span>Funding Agency</span>
-              </div>
+              <!-- NSF acknowledged in Federal Sponsorship & Disclaimer section below per Dr. Han instruction -->
             </div>
           </div>
         </div>
@@ -153,44 +151,31 @@
         <div class="section-header">
           <span class="section-tag">Motivation &amp; Research Foundations</span>
           <h2 class="section-title">The NextG Smart Manufacturing Challenge</h2>
-          <p class="section-subtitle">
-            Next-generation smart factories demand unprecedented agility, but legacy industrial networking architectures 
-            were never designed for dynamic, failure-prone cyber-physical operations.
-          </p>
         </div>
 
         <!-- Problem vs Solution Quad Overview -->
         <div class="quad-overview-grid">
           <div class="problem-card">
             <span class="card-badge">Problem to Solve</span>
-            <h3 class="card-heading">Fragile &amp; Reactive Connectivity</h3>
             <p class="card-p">
               A central challenge in <strong>Next-Generation Manufacturing Systems (NGMS)</strong> is ensuring resilient 
               and deterministic connectivity across wired and wireless domains in dynamic, failure-prone shop floors.
             </p>
             <p class="card-p">
-              Existing industrial solutions are largely <strong>reactive and siloed</strong>, leaving manufacturing operations 
-              vulnerable to wireless RF interference, human and robotic line-of-sight blockage, hardware component failures, 
-              and unpredictable downtime that costs modern manufacturers millions of dollars.
+              Existing solutions are largely reactive and siloed, leaving manufacturing systems vulnerable to unpredictable interference, equipment failures, and other disruptions.
             </p>
           </div>
 
           <div class="solution-card">
             <span class="card-badge">Project Contributions</span>
-            <h3 class="card-heading">Predictive Coordination &amp; Convergence</h3>
             <p class="card-p">
-              Our project advances the <strong>cyber infrastructure design for NGMS</strong> by enabling predictive 
-              coordination across converged wireless and wired networks, establishing a resilient communications foundation.
-            </p>
-            <p class="card-p">
-              By replacing reactive repair with <strong>short-horizon ML prediction</strong>, <strong>ISAC-based physical sensing</strong>, 
-              and <strong>zero-touch TSN failover</strong>, we provide contract-based end-to-end integration with bounded latency and jitter.
+              This project develops an end-to-end architecture that integrates intelligent 5G and 6G devices with deterministic core networks based on Time-Sensitive Networking (TSN). It also develops a unified resource management framework that combines predictive intelligence at the wireless edge with proactive reconfiguration in the core network to help manufacturing systems remain safe, reliable, and efficient under adverse conditions.
             </p>
           </div>
         </div>
 
-        <!-- Vectors Breakdown (Vector A, Vector B, Convergence) -->
-        <div class="vectors-container">
+        <!-- Vectors Breakdown (Vector A, Vector B, Convergence) (Hidden for now; preserved for future use) -->
+        <div class="vectors-container" style="display: none;" aria-hidden="true">
           <div class="vector-box">
             <div class="vector-header">
               <span class="vector-tag">Resilience &amp; Convergence</span>
@@ -360,7 +345,8 @@
                 and Communication (ISAC) techniques, and cycle-aligned scheduling control to dynamically adapt wireless 
                 resources based on real-time channel conditions, interference patterns, and environmental changes.
               </p>
-              <div class="thrust-points-grid">
+              <!-- Thrust 1 Details (Hidden for now; preserved for future use) -->
+              <div class="thrust-points-grid" style="display: none;" aria-hidden="true">
                 <div class="thrust-point">
                   <h4 class="thrust-point-title">Short-Horizon Channel Prediction</h4>
                   <p class="thrust-point-desc">Edge AI models that predict localized RF channel fading and interference 5–50 ms ahead to preemptively trigger grant adaptation.</p>
@@ -391,7 +377,8 @@
                 transmission support, predictive fault detection, shadow schedule generation, and zero-touch failover mechanisms 
                 to ensure bounded latency and near-zero jitter under unexpected network faults.
               </p>
-              <div class="thrust-points-grid">
+              <!-- Thrust 2 Details (Hidden for now; preserved for future use) -->
+              <div class="thrust-points-grid" style="display: none;" aria-hidden="true">
                 <div class="thrust-point">
                   <h4 class="thrust-point-title">Commodity NIC Determinism</h4>
                   <p class="thrust-point-desc">Hardware-software co-designed transmission mechanisms (e.g., KeepON) that enable standard commercial NICs to achieve microsecond-precise TSN timing.</p>
@@ -420,7 +407,8 @@
                 Addresses cross-domain resource management by jointly partitioning, reserving, and scheduling wireless and wired 
                 resources to support heterogeneous industrial applications with diverse requirements in timing, throughput, and computation.
               </p>
-              <div class="thrust-points-grid">
+              <!-- Thrust 3 Details (Hidden for now; preserved for future use) -->
+              <div class="thrust-points-grid" style="display: none;" aria-hidden="true">
                 <div class="thrust-point">
                   <h4 class="thrust-point-title">Joint Resource Partitioning</h4>
                   <p class="thrust-point-desc">Unified mathematical optimization models that dynamically co-allocate 5G radio resource blocks and TSN bandwidth across the shop floor continuum.</p>
@@ -743,12 +731,7 @@
     <section id="team" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Investigators &amp; Collaborators</span>
           <h2 class="section-title">The VINES Research Team</h2>
-          <p class="section-subtitle">
-            An international transatlantic collaboration bringing together leading cyber-physical systems, 
-            wireless communication, and deterministic networking researchers.
-          </p>
         </div>
 
         <!-- Institution 1: University of Connecticut -->
@@ -976,11 +959,11 @@
             <strong>Acknowledgment:</strong> This material is based upon work supported by the National Science Foundation 
             under Grant No. <strong>2549126</strong> (University of Connecticut) and Grant No. <strong>2549127</strong> (The University of Iowa), 
             under the CISE Verticals-enabling Intelligent Network Systems (VINES) Track 1 Program, with international support from the 
-            Global Venture Fund and Swedish Research Council partnerships.
+            Swedish Research Council.
           </p>
           <p class="nsf-disclaimer-text" style="margin-top: 8px;">
             <strong>Disclaimer:</strong> Any opinions, findings, and conclusions or recommendations expressed in this material 
-            are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+            are those of the author(s) and do not necessarily reflect the views of the National Science Foundation and Swedish Research Council.
           </p>
         </div>
       </div>
@@ -997,9 +980,6 @@
             NSF-SRC Track 1: Towards Resilient and Converged NextG Manufacturing Systems. 
             A collaborative initiative by the University of Connecticut, The University of Iowa, 
             and Mid Sweden University.
-          </p>
-          <p style="font-size: 0.8rem; color: #64748b;">
-            National Science Foundation Award #2549126 &amp; #2549127 • CISE Core Programs
           </p>
         </div>
 
@@ -1019,10 +999,8 @@
           <h5>Institutions</h5>
           <ul class="footer-links">
             <li><a href="https://uconn.edu" target="_blank" rel="noopener noreferrer">University of Connecticut</a></li>
-            <li><a href="https://computing.engineering.uconn.edu/" target="_blank" rel="noopener noreferrer">UConn School of Computing</a></li>
             <li><a href="https://uiowa.edu" target="_blank" rel="noopener noreferrer">The University of Iowa</a></li>
             <li><a href="https://miun.se" target="_blank" rel="noopener noreferrer">Mid Sweden University (MIUN)</a></li>
-            <li><a href="https://nsf.gov" target="_blank" rel="noopener noreferrer">National Science Foundation</a></li>
           </ul>
         </div>
       </div>
